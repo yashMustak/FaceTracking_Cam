@@ -3,8 +3,8 @@
 #include<Servo.h>
 Servo myServo;      //Making instance of Servo motor class
 Servo myServo1;
-servoPin1 = 7;
-servoPin2 = 8;
+int servoPin1 = 7;  //connect servo motor pin for vertical motion into 7 pin of arduino
+int servoPin2 = 8;  //connect servo motor pin for horizontal motion into 8 pin of arduino
 void setup() {
   Serial.begin(9600);
   myServo.attach(servoPin1);
