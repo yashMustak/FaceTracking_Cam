@@ -25,7 +25,7 @@ while True:
     for (x,y,w,h) in faces:
         cv2.rectangle(img, (x,y), (x+w, y+h), (255,0,0), 3)
         wc = (x+x+w)/2
-        hc = (y+y+w)/2
+        hc = (y+y+h)/2
 
     if(hc>cols/2+b):
         print('D')
